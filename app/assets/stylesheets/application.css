@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+ }
+body{
+   /* background: #eee !important; */
+   background: linear-gradient(90deg, rgba(196,196,207,1) 0%, rgba(184,184,223,1) 35%, rgba(210,214,214,1) 100%) !important; 
+   color: #575757 !important;
+}
+.big-h1{
+   font-size: 3rem !important;
+   background: -webkit-linear-gradient(45deg, rebeccapurple, red 80%);
+    background-clip: border-box;
+   background-clip: border-box;
+   background-clip: border-box;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.button-span{
+   height: 2rem;
+   border-radius: 40px;
+   background: -webkit-linear-gradient(45deg, #09009f, rgba(8,161,97,0.713725) 80%);
+   display: inline-block;
+   
+}
+button{
+   border-radius: 40px !important;
+   background: #eee !important;
+   border: none !important;
+
+}
+button:hover, button:focus{
+   transform: translateY(-3px);
+}
+.username-container-right{
+   /* background: #eee; */
+}
+.username-container-outer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+
+}
+.username-container-left, .username-container-right{
+}
+.display-4{
+   text-shadow: 2px 2px #eee;
+}
+.new-username-button-span{
+   margin-top: 3rem;
+}
+.highlight{
+   background: #90ee902e;
+}
+.italicized{
+   font-style: italic;
+}
+#copy-button{
+  
+}
+.copy-button-span{
+   margin-left: 1rem;
+}
+.socials-container{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+}
+.hidden{
+   display: none !important;
+}
+.word-scroller-ele{
+   font-size: 3rem;
+   list-style: none;
+   background: -webkit-linear-gradient(45deg, rebeccapurple, red 80%);
+   background-clip: border-box;
+  background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.usernames-scrolling-list{
+  animation: scroll-up .5s linear infinite;
+  animation: scroll-up 1s lin
+}
+.usernames-list-span{
+   height: 3rem;
+  
+    width: 60vw; 
+  
+   overflow: hidden;
+   position: absolute;
+   left: 25%; 
+   
+   z-index: -2;
+}
+.home-body{
+   display: flex;
+   flex-direction: column;
+   min-height: 39vh;
+}
+.home-body-inner{
+   display: flex;
+   flex-direction: column;
+   min-height: 20vh;
+}
+.main-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20vh;
+   z-index: 10000;
+
+}
+@media only screen and (max-width: 600px) {
+   .container{
+      width: 100vw !important;
+   }
+   .big-h1{
+      font-size: 2rem !important;
+   }
+   .username-container-outer{
+      display:block;
+      margin-bottom: 2rem;
+   }
+   #username-h1{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .usernames-list-span{
+      left: 0;
+      height: 2rem;
+      width: 80%;
+   }
+   .word-scroller-ele{
+      font-size: 2rem;
+   }
+ }
+@keyframes scroll-up{
+   0%{
+      transform: trnaslateY(0);
+   }
+   100%{
+      transform: translateY(-100vh);
+   }
+}
