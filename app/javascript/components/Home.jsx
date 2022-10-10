@@ -20,6 +20,18 @@ export default () => {
       }
     },5000)
   })
+  // useEffect(() => {
+  //   for(var i = 0; i < adjectives.length; i++){
+      
+  //     //setFirstWord(adjectives[i].value)
+  //     timeoutSetAdj(adjectives[i].value)
+  //   }
+  //   function timeoutSetAdj(adj){
+  //     setTimeout(() => {
+  //       setFirstWord(adj)
+  //     },50)
+  //   }
+  // },[adjectives])
   function generateUsername(){
     setUsername('')
     setFirstWord('')
@@ -62,7 +74,7 @@ export default () => {
       })
   }
   function generateNoun(){
-    get_nouns()
+    //get_nouns()
     const headers = {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
@@ -82,7 +94,7 @@ export default () => {
       })
   }
   function generateAdjective(){
-    get_adjectives()
+    //get_adjectives()
     const headers = {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
@@ -123,6 +135,7 @@ export default () => {
             console.log(json)
             console.log('finished get_nouns')
             setNouns(json.nouns)
+            
         })
         .catch((e) => {})
 }
@@ -143,6 +156,7 @@ async function get_adjectives(){
         console.log(json)
         console.log('finished get_adjectives')
         setAdjectives(json.adjectives)
+        
     })
     .catch((e) => {})
 }

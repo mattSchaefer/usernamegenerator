@@ -101,8 +101,8 @@ button:hover, button:focus{
 
 }
 .usernames-scrolling-list{
-  animation: scroll-up .5s linear infinite;
-  animation: scroll-up 1s lin
+  animation: scroll-up .6s linear infinite;
+  
 }
 .usernames-list-span{
    height: 3rem;
