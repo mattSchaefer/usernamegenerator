@@ -278,10 +278,10 @@ function build_usernames(){
               <span className="button-span new-username-button-span">
                 <button onClick={generateUsername} id="new-username-button">New Username</button>
               </span>
-              <span className="socials-container">
+              {/* <span className="socials-container">
               <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="box_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
               <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
-              </span>
+              </span> */}
           </div>
         </div>
       </div>
