@@ -1,7 +1,7 @@
 class WordSpider < Kimurai::Base
     @name = "word_spider"
     @engine = :mechanize
-    @start_urls = ["https://richardharringtonblog.com/adjectives-list/"]
+    @start_urls = ["https://richardharringtonblog.com/list-of-nouns/"]
     def self.process(url)
         @start_urls = [url]
         self.crawl!
@@ -10,7 +10,7 @@ class WordSpider < Kimurai::Base
         results = response.xpath("//div[@class='entry-content']//ul/li").map do |li|
             # item = {}
             w = Word.new
-            w.word_type = "adjective"
+            w.word_type = "noun"
             w.value = li.text
             w.save!
             # item[:type] = "noun"
