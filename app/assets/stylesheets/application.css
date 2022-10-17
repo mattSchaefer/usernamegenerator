@@ -29,6 +29,7 @@ body{
 }
 .big-h1{
    font-size: 3rem !important;
+   font-weight: 300;
    background: -webkit-linear-gradient(45deg, rebeccapurple, red 80%);
     background-clip: border-box;
    background-clip: border-box;
@@ -43,10 +44,15 @@ body{
    display: inline-block;
    
 }
+.italics{
+   font-style: italic;
+}
+.lead{font-weight: bold !important;}
 button{
    border-radius: 40px !important;
    background: #eee !important;
    border: none !important;
+   height: 1.5rem;
 
 }
 button:hover, button:focus{

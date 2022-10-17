@@ -212,7 +212,7 @@ function build_usernames(){
         <div className="container secondary-color">
           <h1 className="display-4">Username Generator</h1>
           <p className="lead">
-            Find your new alias.
+            Hit the <span className="italics">New Username</span> button to find your new alias.
           </p>
           <span className="home-body">
             <span className="home-body-inner">
