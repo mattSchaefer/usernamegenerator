@@ -128,7 +128,7 @@ button:hover, button:focus{
 .home-body{
    display: flex;
    flex-direction: column;
-   min-height: 39vh;
+   min-height: 25vh;
 }
 .home-body-inner{
    display: flex;
