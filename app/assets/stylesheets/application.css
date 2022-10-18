@@ -46,6 +46,7 @@ body{
 }
 .italics{
    font-style: italic;
+   color: green;
 }
 .lead{font-weight: bold !important;}
 button{
